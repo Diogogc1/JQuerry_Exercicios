@@ -1,0 +1,125 @@
+<!--
+    Exercícios - JQuerry
+    Nome: Diogo Gomes Castro
+    Curso: ADS - 3° Período
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JQuerry - Exercícios</title>
+</head>
+<body>
+    <header>
+
+        <ul id="nav_bar">
+            <li><a href="#exercicio1">Exercício 1</a></li>
+            <li><a href="#exercicio2">Exercício 2</a></li>
+            <li><a href="#exercicio3">Exercício 3</a></li>
+            <li><a href="#exercicio4">Exercício 4</a></li>
+            <li><a href="#exercicio5">Exercício 5</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1>Exercícios - JQuery</h1>
+        <section id="exercicio1">
+            <h2>Exercício 1</h2>
+            <p>
+                Crie um elemento do tipo parágrafo e um botão. Quando tal botão for clicado, 
+                o texto do parágrafo deve ser modificado para "Estou estudando JQuery!"
+            </p>
+            <p></p>
+            <button>Clique</button>
+        </section>
+
+        <section id="exercicio2">
+            <h2>Exercício 2</h2>
+            <p>
+                Crie um elemento de parágrafo que contenha seu nome completo. Adicione um estilo de cor de fonte e
+                plano de fundo a ele. Além disso, adicione um botão. Quando o botão é clicado deve haver a alternância
+                da visibilidade deste parágrafo, isto é, se estava visível fica invisível e vice-versa.
+            </p>
+            <p>Diogo Gomes Castro</p>
+            <button>Clique</button>
+        </section>
+
+        <section id="exercicio3">
+            <h2>Exercício 3</h2>
+            <p>
+                Crie um menu com efeito de acordeon. Para isso, você irá usar a ideia de lista e sub lista. A lista principal
+                apresentará os principais itens do menu. Um item da lista pode ter uma sub lista que irá conter as opções
+                mais específicas. Você deverá programar para que quando o item da lista principal for clicado, os itens da
+                respectiva sub lista aparecem com o efeito de deslizar (slide).
+            </p>
+            <ul>
+                <li id="li1" class="show">CSS</li>
+                <li class="hidden li1">
+                    <ul>
+                        <li>Sass</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </li>
+                <li id="li2" class="show">JS</li>
+                <li class="hidden li2">
+                    <ul>
+                        <li>JQuery</li>
+                        <li>TypeScript</li>
+                        <li>React</li>
+                    </ul>
+                </li>
+                <li id="li3" class="show">Dart</li>
+                <li class="hidden li3">
+                    <ul>
+                        <li>Flutter</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="exercicio4">
+            <h2>Exercício 4</h2>
+            <p>
+                Crie um formulário com três campos de texto, são eles: 1) nome (não pode conter espaços em branco,
+                deve ter no mínimo 5 caracteres e no máximo 40); 2) endereço (não pode ser em branco, deve ter no
+                mínimo duas palavras). Além disso, crie um botão "Enviar". Quando este botão for clicado, o formulário
+                deverá ser validado utilizando JQuery (não utilize recursos do HTML5 neste exercício). As mensagens de
+                erro devem aparecer em um elemento do tipo parágrafo logo acima do formulário. Se preferir, você pode
+                personalizar ainda mais e colocar as mensagens logo abaixo dos respectivos campos que as originaram.
+            </p>
+
+            <div>
+                <label>Nome</label>
+                <input id="nome" type="text" placeholder="Nome">
+                <p class="erro"></p>
+                <p class="erro"></p>
+
+                <label>Endereço</label>
+                <input id="ender" type="text" placeholder="Endereço">
+                <p class="erro"></p>
+                <button>Enviar</button>
+            </div>
+        </section>
+        
+        <section id="exercicio5">
+            <h2>Exercício 5</h2>
+            <p>
+                Crie uma galeria de imagens com botões de próximo e anterior. Para isso, você deverá baixar 5 imagens
+                da internet de sua preferência e colocá-las em uma pasta dentro de seu projeto. Quando o botão anterior
+                for clicado, apresente a imagem anterior e, de forma semelhante, quando o botão próximo for clicado,
+                apresente a imagem posterior a atual. Utilize o efeito de fade em sua galeria.
+            </p>
+            <img src="images/jquerry_img.jpg">
+
+            <button id="ant">Anterior</button>
+            <button id="prox">Próximo</button>
+
+        </section>
+    </main>
+
+    <script src="scripts/lib/jquery-3.7.0.min.js"></script>
+    <script src="scripts/global.js"></script>
+</body>
+</html>

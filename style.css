@@ -1,0 +1,164 @@
+/*
+    Exercícios - JQuerry
+    Nome: Diogo Gomes Castro
+    Curso: ADS - 3° Período
+*/
+
+*{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 11vh;
+    width: 100%;
+    background-color: rgb(0, 40, 225);
+}
+
+#nav_bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#nav_bar > li{
+    width: 15%;
+    font-size: 1.4em;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    padding: 11px 60px;
+    background-color: rgba(255, 255, 255, 0.177);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    transition: 0.2s linear;
+}
+
+a:hover{
+    background-color: rgba(255, 255, 255, 0.249);
+    padding: 14px 60px;
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+}
+
+h1{
+    text-align: center;
+    margin-top: 1.5vh;
+    margin-bottom: 6vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+}
+
+section{
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 7vh;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+h2{
+    font-size: 1.4em;
+    margin-bottom: 2vh;
+    font-family: cursive;
+    word-spacing: -4px;
+}
+
+button{
+    margin-top: 2vh;
+    background-color: rgb(0, 40, 225);
+    color: rgb(255, 255, 255);
+    padding: 6px 10px;
+    font-size: 0.95em;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+section:first-of-type p:last-of-type{
+    margin-top: 2vh;
+    color: rgb(255, 0, 0);
+}
+
+section:nth-of-type(2) p:last-of-type{
+    margin-top: 2vh;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 6px;
+    width: 10vw;
+    border-radius: 2px;
+}
+
+ul{
+    list-style: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+section > ul:first-of-type{
+    margin-top: 2vh;
+}
+
+.show{
+    color: rgb(0, 0, 255);
+    font-size: 1.6em;
+    margin-top: 1vh;
+    cursor: pointer;
+    width: 3vw;
+}
+
+.hidden{
+    display: none;
+    font-size: 1.3em;
+    color: rgb(255, 0, 0);
+    margin-left: 1vw;
+    margin-top: 0.5vh;
+}
+
+label{
+    display: block;
+    margin-top: 2vh;
+}
+
+input{
+    margin-top: 0.5vh;
+    height: 4vh;
+    width: 30vw;
+    padding-left: 0.5vw;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2px;
+}
+
+.erro{
+    color: rgb(255, 0, 0);
+    font-size: 0.9em;
+    margin-top: 1vh;
+}
+
+section:last-of-type{
+    margin-bottom: 4vh;
+}
+
+img{
+    height: 40vh;
+    margin-top: 2vh;
+    display: block;
+}
+
+#prox{
+    margin-left: 0.1vw;
+}
